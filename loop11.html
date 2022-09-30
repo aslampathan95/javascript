@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+      var roll = prompt("Enter the roll no");
+      var name = prompt("Enter the name");
+    //    prompt("Enter the marks");
+    var marks=0;
+    for(var i =0;i<3;i++){
+       console.log(marks+= parseInt( prompt("Enter the marks")));
+    }
+    var percentage= (marks/300) * 100;
+    document.write("percentage of  " +name+"is  " + percentage)
+       
+        </script>
+</body>
+</html>

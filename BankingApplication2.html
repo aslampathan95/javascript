@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h4> Welcome to bank of Virash</h2>
+    <button onclick="start()"> Click here to Start!</button>
+
+    <script>
+      var  balance=200;
+      var name,pan;
+
+      function start(){
+        var input = prompt("1.Create account:<br> 2.Deposit Amount: <br>  3.widthdraw Amount:<br>   4.Check Bank Balance: <br>  5.Exit :")
+       
+
+        if( input ==1){
+
+          createaccount();
+        }
+        else if(input ==2){
+          deposit();
+        }
+        else if( input == 3){
+          withdrwa();
+        }
+        else if( input == 4){
+          checkbalance();
+        }
+        else if( input == 5){
+           var a=  confirm("You want to exit? ")
+          
+        }else{
+          
+        }
+
+        start();
+
+      }
+
+      function createaccount(){
+         name = prompt("Enter the Name: ");
+         pan = prompt("Enter the pan number: ");
+
+      }
+      function deposit(){
+        if(pan == "" || name == ""){
+          alert("please create account first:");
+        }
+        else{
+          var amount = parseInt( prompt("Enter the  amount to deposit: "));
+       balance+=amount;
+       alert("Total Balance is: " + balance)
+        }
+       
+      }
+      function withdrwa(){
+        if(pan == "" || name == ""){
+          alert("please create account first:");
+        }
+        else{
+          var amount= parseInt( prompt("Enter the  amount to withdrwa: "));
+        balance-=amount;
+        alert("Total Balance is: " + balance)
+        }
+       
+
+      }
+      function checkbalance(){
+
+        alert("balance is:  "+balance)
+      }
+      
+
+    </script>
+</body>
+</html>

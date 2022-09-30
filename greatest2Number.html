@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Enetr the first Number: </span>
+    <input type="text" id="id1"> <br><br>
+    <span>Enetr the second Number: </span>
+    <input type="text" id="id2"> <br><br>
+
+    <input type="button" onclick="greatest()" value="submit">
+    <p id="demo"> Answer </p>
+
+    <script>
+        var n1,n2;
+        function greatest(){
+            
+            var n1 = parseInt(document.getElementById("id1").value);
+            var n2 = parseInt(document.getElementById("id2").value);
+            
+            if(n1 > n2){
+               
+                document.getElementById("demo").innerHTML= "gretest is"+n;
+                
+            }
+            else{
+                document.getElementById("demo").innerHTML="gretest is"+n2;
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>

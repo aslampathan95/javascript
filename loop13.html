@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var unit = prompt("Enter the sale amount: ");
+        var discount=0;
+        var dis =0;
+        if( unit < 100){
+            document.write("No discount: " +unit);
+        }
+        else if(unit >100 && unit <120){
+            document.write("10% discount will applie on "+unit+"<br>");
+            discount = (unit * 10)/100;
+                dis= unit - discount;
+               document.write("after discount applied: "+dis);
+        }
+        else if(unit > 120){
+            document.write("15% discount will applie on "+unit+"<br>");
+            discount = (unit * 15)/100;
+                dis= unit - discount;
+               document.write("after discount applied: "+dis);
+        }
+        else{
+            document.write("No discount");
+        }
+
+
+    </script>
+
+</body>
+</html>
